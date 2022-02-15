@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e341a131bd.js" crossorigin="anonymous"></script>
+    <title>Invoice Project</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-colors">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white mx-auto fw-bold fs-1" href="#"
+            ><i class="fa-solid fa-receipt me-3"></i>YOUR INVOICE</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- top section -->
+      <div class="w-75 mt-3 mx-auto text-center bg-colors-primary">
+        <div class="bg-colors text-center py-3">
+          <span class="text-white"> Please enter the data.... </span>
+        </div>
+        <div class="card-body">
+          <!-- input group -->
+          <div class="input-group">
+            <span class="input-group-text">Buyer details</span>
+            <textarea class="form-control" id="text-area" aria-label="With textarea"></textarea>
+            <button type="submit" id="detail-submit-btn" class="btn btn-primary">Submit</button>
+          </div>
+          <p class="text-light text-center bg-colors my-3 p-1">Enter the item details....</p>
+          <div class="mt-2 mb-4 mx-auto col-12 col-md-6">
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Item name</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">price</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Quantity</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn d-inline-block btn-primary">Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-white">
+          <marquee behavior="alternet" width="60%" height="100px" direction=""
+            >You can add more items using input fields.
+          </marquee>
+        </div>
+      </div>
+      <div class="container my-5 bg-invoice-colors">
+        <div class="card-body">
+          <h4 class="py-2 fw-bold fs-1 text-white">Invoice: #8723192</h4>
+          <div class="row gx-3 text-white">
+            <div class="col-md-4">
+              <div class="p-3 bg-colorss rounded h-100">
+                <span class="fw-bold text-warning fs-5">Date: 22.10.22</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-colorss rounded h-100">
+                <span class="fw-bold text-warning fs-5">Invoice To</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-colorss rounded h-100">
+                <span class="fw-bold text-warning fs-5">Seller.</span>
+                <br />
+                <span class="fs-5">abcd inc hellow@apexo.com 16 ctg, Bangladesh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-body mx-3 text-center">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">josim</th>
+                <td>Mark</td>
+                <td class="fw-bold text-end">SubTotal:</td>
+                <td><span>$0</span></td>
+              </tr>
+              <tr>
+                <th scope="row">korim</th>
+                <td>Jacob</td>
+                <td class="fw-bold text-end">Tax:</td>
+                <td><span>$0</span></td>
+              </tr>
+              <tr>
+                <th scope="row">rohim</th>
+                <td>Jacob</td>
+                <td class="fw-bold text-end">Grand Total:</td>
+                <td><span>$0</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mx-3">
+          <div class="row">
+            <div class="col-md-10">
+              <h5 class="text-warning fw-bold">Bank Transfer</h5>
+              <span class="text-light"
+                >Account Name: Sagar Biswas Account Number: <br />1234567890934
+                Code:231231231212312</span
+              >
+            </div>
+            <div class="col-md-2">
+              <div class="text-light pb-4">
+                <h5>Total Amount</h5>
+                <h5 class="text-center">$0</h5>
+                <h5>Taxes Included</h5>
+              </div>
+            </div>
+            <div class="text-light pb-3">
+              <p>
+                Get started by creating a new file or uploading an existing file. We recommend every
+                repository include a README, LICENSE, and .gitignore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5">
+        <div class="text-center">
+          <button
+            type="button"
+            class="mx-3 border border-2 border-primary bg-black text-primary p-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              style="height: 20px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
+              />
+            </svg>
+            Print InVoice
+          </button>
+          <button type="button" class="bg-black text-primary p-1 border border-2 border-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              style="height: 20px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
+              />
+            </svg>
+            download InVoice
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bg-colors text-light text-center py-4">
+        <p>All rights reserve @shda.com</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
